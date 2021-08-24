@@ -1,143 +1,163 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Luke Scott</title>
-    <meta name="description" content="Budding Web Developer in the making" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="/CSS/main.css" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Luke Scott</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="outer-container">
-            <nav class="nav-container">
-                <a class="site-logo transition-link" href="/">
-                    <span class="logo-text">LS</span>
-                </a>
-                <ul class="navbar-right">
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
+  <header>
+    <a href="#" class="logo">Luke Scott</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+      <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="banner" id="home">
+    <div class="textbox">
+      <h2>Hello, my name is<br><span>Luke Scott.</span></h2>
+      <h3>I'm a Web Developer.</h3>
+      <a href="#about" class="button">About Me</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
     <div class="content">
-        <section class="inner-container hero">
-            <h1>Hi, my name is Luke. I am a budding Web Development student.</h1>
-        </section>
+      <div class="contentBox">
+        <h3>I'm a Web Developer.</h3>
+        <p>
+          I am currently studying Web Development on a Tech Learnership program
+          at <a href="https://www.umuzi.org/" class="link">Umuzi</a>. I like to
+          think of myself as someone who is creative and artistic. Using the
+          skills I am learning on this journey combined with that knack for
+          creativity, I believe would prove to be a great combination. Prior to
+          starting this Learnership I completed a learnership in IT Tech support
+          where my interest in tech and IT was sparked. This program is going to
+          challenge me and mould me into a professional and help me achieve my
+          goal of becoming a successful software developer.</p>
+      </div>
+      <div class="w50">
+        <img src="img/IMG_2560.JPG" class="img">
+      </div>
+    </div>
+  </section>
 
-        <section class="outer-container space-bottom">
-            <img src="/img/IMG_9162.JPG" alt="Lukeus" />
-        </section>
-
-        <section class="inner-container space-bottom" id="about">
-            <h3>About</h3>
-            <p>
-                I am currently studying Web Development on a Tech Learnership program
-                at
-                <a href="https://www.umuzi.org/" class="link">Umuzi</a>. I like to
-                think of myself as someone who is creative and artistic. Using the
-                skills I am learning on this journey combined with that knack for
-                creativity, I believe would prove to be a great combination. Prior to
-                starting this Learnership I completed a learnership in IT Tech support
-                where my interest in tech and IT was sparked. This program is going to
-                challenge me and mould me into a professional and help me achieve my
-                goal of becoming a successful software developer.
-            </p>
-        </section>
-
-        <section class="inner-container space-bottom" id="skills">
-            <h3>Skills</h3>
-            <h4>HTML</h4>
-            <p>
-                Basic understanding of HTML, but I am building onto that knowledge
-                progressively.
-            </p>
-            <h4>CSS</h4>
-            <p>
-                Cascading Style Sheets will be one of the tools I will use to bring my
-                ideas to life.
-            </p>
-            <h4>Javascript</h4>
-            <p>
-                The master behind Web interactivity. I am working on my proficiency
-                with js every day, because it is such a powerful tool.
-            </p>
-        </section>
-
-        <section class="inner-container space bottom" id="projects">
-            <h3>Projects</h3>
-            <p>Coming soon... under construction.</p>
-        </section>
-
-        <section class="inner-container space bottom" id="contacts">
-            <h3>Contact Details</h3>
-            (+27) 81 443 3031
-            <br>
-            <a> href="mailto:lukescott551@email.com">lukescott551@gmail.com</a>
-            <div class="social-networks">
-                <a> href="https://github.com/lukedscott">lukedscott (Github)</a>
-                <a> href="https://www.linkedin.com/feed/">Luke Scott (Linkedin)</a>
-                <a> href="https://drive.google.com/file/d/1_xcGblzm01hXqWoZmfZtK3eH109z0TSx/view?usp=sharing">Download
-                    my CV</a>
-            </div>
-        </section>
+  <section class="skills" id="skills">
+    <div class="heading white">
+      <h2>Skills</h2>
+      <p>Although still very early in my journey these are some of the tools I've been learning and using</p>
     </div>
 
-    <footer class="border">
-        <p>
-            <bold>Copyright Luke Scott <span id="footer-date"></span></bold>
-        </p>
-    </footer>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/icons8-html-5-30.png">
+        <p>Working knowledge of HTML5</p> 
+      </div>
+      <div class="skillsBox">
+        <img src="img/icons8-css3-50.png">
+        <p>Working knowledge of CSS3 & CSS Grid</p> 
+      </div>
+      <div class="skillsBox">
+        <img src="img/icons8-javascript-logo-50.png">
+        <p>Working knowledge of Javascript</p> 
+      </div>
+      <div class="skillsBox">
+        <img src="img/icons8-github-30.png">
+        <p>Version control with Github</p> 
+      </div>
+      <div class="skillsBox">
+        <img src="img/icons8-git-50.png">
+        <p>Using git from the command line</p> 
+      </div>
+      <div class="skillsBox">
+        <img src="img/icons8-nodejs-32.png">
+        <p>Basic understanding of nodejs</p> 
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="heading">
+      <h2>Portfolio</h2>
+    </div>
+    <div class="content">
+      <div class="portfolioBox">
+        <p>This section is currently under construction.</p>
+        <p>In the meantime this is a link to my Github profile<a href="https://github.com/lukedscott" class="link"></a></p>
+        <p>This is a link to my resume<a href="https://drive.google.com/file/d/1_xcGblzm01hXqWoZmfZtK3eH109z0TSx/view?usp=sharing" class="link">CV</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h2>Contact</h2>
+    </div>
+    <div class="content">
+      <div class="contactInfo">
+        <h3>Contact Info</h3>
+        <div class="contactInfoBox">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>63 Maud Street,<br>Florida, Roodepoort<br>1709</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>081 443 3031</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope-o"></i>
+            </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>lukescott551@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>Copyright &copy 2021 Luke Scott.</p>
+  </div>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function() {
+      let header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      let menuToggle = document.querySelector('.toggle');
+      let menu = document.querySelector('.toggle');
+      menuToggle.classlist.toggle('active');
+      menu.classlist.toggle('active');
+    }
+    </script>
 </body>
-
-</html>-->
-
-<!DOCTYPE html>
-<html>
-<head>
-
-	<title>Luke Scott | About</title>
-
-	<!-- Start Normalize CSS -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-	<!-- Start Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-
-	<!-- Start Global CSS -->
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-
-</head>
-<body>
-
-    <header>
-
-        <img id="logo" src="img/favicon.ico">
-
-        <nav>
-            <a href="index.html">About</a>
-            <a href="index.html">Skills</a>
-            <a href="index.html">Portfolio/Projects</a>
-            <a href="index.html">Contact</a>
-        </nav>
-    </header>
-
-    <section id=""
-</body>
-
+</html>
