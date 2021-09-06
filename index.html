@@ -148,15 +148,15 @@
 
   <script type="text/javascript">
     window.addEventListener('scroll', function() {
-      var header = document.querySelector('header');
+      let header = document.querySelector('header');
       header.classList.toggle('sticky', window.scrollY > 0);
     });
 
     function toggleMenu() {
-      var menuToggle = document.querySelector('.toggle');
-      var menu = document.querySelector('.toggle');
-      menuToggle.classlist.toggle('active');
-      menu.classlist.toggle('active');
+      let menuToggle = document.querySelector('.toggle');
+      let menu = document.querySelector('.toggle');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
     }
     </script>
 </body>
